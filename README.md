@@ -19,7 +19,20 @@ En este proyecto, se usaron 4 formas de descriptores y *embeddings*
 
 ### HOG
 
-[Histograma de gradientes orientados](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients)
+El [histograma de gradientes orientados](https://en.wikipedia.org/wiki/Histogram_of_oriented_gradients) es un descriptor que cuenta las veces en las que hay un cierto gradiente orientado el localizaciones específicas de una imagen.
+
+En nuestro caso, este descriptor realiza una descripción de la imagen con **32 características**.
+
+![HOG](https://miro.medium.com/max/683/1*XZxX8V4OrVSwQ9e9snE3gA.png)
+
+### LBP
+
+El descriptor de [patrones locales binarios](https://en.wikipedia.org/wiki/Local_binary_patterns) consiste en dividir la imagen en celdas, realziar comparaciones entre los píxeles vecinos de cada celda. A continuación, si el valor del pixel central es mayor que el de sus vecinos, se escribe un 1 y, en caso contrario, un 0. Con esta codificación, se contruye un histograma.
+
+En nuestro caso, este descriptor realiza una descripción de la imagen con **531 características**.
+
+![LBP](https://raw.githubusercontent.com/arsho/local_binary_patterns/master/screenshot/lbp_output.png)
+
 
 
 ## Resultados
