@@ -53,7 +53,7 @@ En nuestro caso, este descriptor realiza una descripción de la imagen con **262
 
 ### SVM
 
-Las [SVM o Máquinas de vectores de soporte](https://es.wikipedia.org/wiki/M%C3%A1quinas_de_vectores_de_soporte). A grandes rasgos, SVM construye unos hiperplanos de alta dimensionaldiad que separe las clases involucradas en el proceso.
+Las [SVM o Máquinas de vectores de soporte](https://es.wikipedia.org/wiki/M%C3%A1quinas_de_vectores_de_soporte). A grandes rasgos, SVM construye unos hiperplanos de alta dimensionalidad que separe las clases involucradas en el proceso.
 
 ![SVM](https://lh3.googleusercontent.com/proxy/HeBuoqkEzyIThjJ5_mIhVHfdJc1UP9-HU5LkIOPphKftQEZ0F8nPhscgDQnmpqujApWoppDj7SDtKn_0br7gAMGzGH86rgrpCGHAtfbAzNIXWQWVsg)
 
@@ -144,3 +144,12 @@ Dichas pruebas son:
 
 
 ## Conclusiones
+
+Mediante los resultados obtenidos, se puede comprobar que en este proyecto, el mejor resultado obtenido viene por parte del uso de LBP como descriptor y Random forest como clasificador ya que, aparte de poseer el *accuracy* más alto, también posee un buen *precision* y *recall* con respecto a otras opciones.
+
+La opción ganadora presenta un 3.9 % de mejora presente al *baseline*. No obstante, hay que tener en cuenta que no se realizó ningún de tratamiento de las tres categorías de imágenes existentes: fácil, normal y difícil.
+
+Otra nota interesante a contemplar en este proyecto es la relativa buena eficacia en general de Random forest en la mayoría de pruebas.
+
+
+Como ampliación de este proyecto, sería interesante usar las categrías previamente mencionadas, además de hacer un estudio más exhaustivo sobre otras regiones de interés, como podría ser los ojos o la boca. Además, se podrían emplear más técnicas de preprocesamiento y reducción de dimensionalidad, como podría ser PCA o t-SNE, o, en lugar de convertir la imagen a escala de grises, usar algún filtro más elaborado.
