@@ -4,7 +4,7 @@
 
 El objetivo de este proyecto consiste en realizar la clasificación de rostros, siendo capaz de percibir aquellos que son reales frente a otros generados mediante aprendizaje automático.
 
-Para ello, se realiza una serie de pruebas, variando los descriptores de caracterísiticas de las imágenes, los descriptores e incluso, el uso de una región de interés (ROI).
+Para ello, se realiza una serie de pruebas, variando los descriptores de caracterísiticas de las imágenes, los clasificadores e incluso, el uso de una región de interés (ROI).
 
 ## Conjunto de datos
 
@@ -83,7 +83,7 @@ Para este fin, se usa el [*CascadeClassifier* de OpenCV](https://docs.opencv.org
 
 ## Pruebas realizadas
 
-Con todas las técnicas y recursos mencionados anteriomente, se realizan un total de **12 pruebas** (sin contar el *baseline*).
+Con todas las técnicas y recursos mencionados anteriormente, se realizan un total de **12 pruebas** (sin contar el *baseline*).
 
 Dichas pruebas son:
 
@@ -104,8 +104,8 @@ Dichas pruebas son:
 * Facenet + MLP
 
 
-* VGG-Face + SVM + ROI	61.9	58.7	58.9
-* VGG-Face + Random Forest + ROI	59.0	68.2	58.0
+* VGG-Face + SVM + ROI
+* VGG-Face + Random Forest + ROI
 
 ## Resultados
 
@@ -145,11 +145,11 @@ Dichas pruebas son:
 
 ## Conclusiones
 
-Mediante los resultados obtenidos, se puede comprobar que en este proyecto, el mejor resultado obtenido viene por parte del uso de LBP como descriptor y Random forest como clasificador ya que, aparte de poseer el *accuracy* más alto, también posee un buen *precision* y *recall* con respecto a otras opciones.
+Mediante los resultados obtenidos, se puede comprobar que en este proyecto, el mejor resultado obtenido viene por parte del uso de **LBP como descriptor y Random forest como clasificador** ya que, aparte de poseer el *accuracy* más alto, también posee un buen *precision* y *recall* con respecto a otras opciones.
 
 La opción ganadora presenta un 3.9 % de mejora presente al *baseline*. No obstante, hay que tener en cuenta que no se realizó ningún de tratamiento de las tres categorías de imágenes existentes: fácil, normal y difícil.
 
 Otra nota interesante a contemplar en este proyecto es la relativa buena eficacia en general de Random forest en la mayoría de pruebas.
 
 
-Como ampliación de este proyecto, sería interesante usar las categrías previamente mencionadas, además de hacer un estudio más exhaustivo sobre otras regiones de interés, como podría ser los ojos o la boca. Además, se podrían emplear más técnicas de preprocesamiento y reducción de dimensionalidad, como podría ser PCA o t-SNE, o, en lugar de convertir la imagen a escala de grises, usar algún filtro más elaborado.
+Como ampliación de este proyecto, sería interesante usar las categorías previamente mencionadas, además de hacer un estudio más exhaustivo sobre otras regiones de interés, como podría ser los ojos o la boca. Además, se podrían emplear más técnicas de preprocesamiento y reducción de dimensionalidad, como podría ser PCA o t-SNE, o, en lugar de convertir la imagen a escala de grises, usar algún filtro más elaborado.
